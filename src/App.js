@@ -61,6 +61,8 @@ function App() {
     
     if (name && emailId && phoneNo && password && confirmPassword && confirmPasswordMatch) {
       alert(`You are successfully logged in.\n name:${userData.name} \n Email Id: ${userData.emailId} \n Phone no: ${userData.phoneNo}\n password: ${userData.password}`);
+
+      setUserData({ name: '', emailId: '', phoneNo: '', password: '', confirmPassword: '' });
     }
   }
 
